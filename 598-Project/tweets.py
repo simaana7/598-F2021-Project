@@ -38,7 +38,7 @@ def collect(api, until_date, out_name):
                                 q=kw_cov + kw_vac + kw_tag + '-filter:retweets',
                                 tweet_mode='extended',
                                 until=until_date,
-                                lang='en',result_type="popular").items(5)
+                                lang='en').items(500)
 
     #print(list(tweets_list))
 
@@ -49,6 +49,7 @@ def collect(api, until_date, out_name):
 
         line = {'time': time, 'id': id, 'like': favorite_count, 'text': text.replace("\n", " ")}
         output.append(line)
+        #print(tweet)
 
     df = pd.DataFrame(output)
     df.to_csv(out_name)
