@@ -1,3 +1,5 @@
+
+
 """ Comp598 Final Project
     data collection
     Hanzhi Z
@@ -58,6 +60,6 @@ def collect(api, until_date, out_name):
 if __name__ == "__main__":
     api = t_auth(0)
 
-    collect(api, "2021-11-22", './output_1.csv')
-    collect(api, "2021-11-23", './output_2.csv')
-    collect(api, "2021-11-24", './output_3.csv')
+    collect(api, "2021-11-29", './output_1.csv')
+    collect(api, "2021-11-30", './output_2.csv')
+    collect(api, "2021-12-1", './output_3.csv')

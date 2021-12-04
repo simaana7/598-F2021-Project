@@ -9,11 +9,11 @@ import pandas as pd
 
 today = datetime.date.today()
 
-consumer_key = ['tdeGS1TGUz3s6gbf3jfQ5lIzy']
-consumer_secret = ['q5lpPI2W7sQI0q1y6MtZcE6w8vMwhv9UW0YpKkoBJhjv5zF0r1']
+consumer_key = ['cduDckJL1S93EH37fOObVP809']
+consumer_secret = ['uKAUae1c8iHISMJuZdk3oMICOlMnUVgpQadee6WJK5Mwfe1g1y']
 # bearer_token = 'AAAAAAAAAAAAAAAAAAAAACgrVwEAAAAAknkrQU2Br%2FPoi%2FARdB550Wc0x7E%3DDyg7333SOTN8ZdwJvpP45hIAB74HyJ4dt67blo7CPmu8VaqYTq'
-access_token = ['809548229163487233-B0kLyKrfvF3zRH2DC5P7T9DYfNa29yb']
-access_token_secret = ['ptVx7wxLHLSIA8L7z4rCfrySbrvn8TohPxCgYwOkvk8r3']
+access_token = ['1341404696825786373-pAXIoJ9OTHVEGlsjhxB1uwmIuJNbof']
+access_token_secret = ['Cm4gxGqWVCRdEovQphF60IGjxB2eYYIyI4RfHRGh83inw']
 
 # approved COVID-19 vaccine:
 # https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/drugs-vaccines-treatments/vaccines.html
