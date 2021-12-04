@@ -1,5 +1,3 @@
-
-
 """ Comp598 Final Project
     data collection
     Hanzhi Z
@@ -27,6 +25,7 @@ kw_cov = 'covid OR SARS-CoV-2 OR coronavirus '
 kw_vac = 'OR vaccination OR Moderna OR Pfizer OR AstraZeneca OR (Janssen AND vaccine) OR (Johnson AND vaccine) OR Covishield OR Covaxin OR Sinopharm OR Sinovac '
 kw_tag = 'OR #COVID OR #VACCINATION OR #Moderna OR #Pfizer OR #AstraZeneca OR #Johnson&Johnson OR #Covishield OR #Covaxin OR #Sinopharm OR #Sinovac OR #coronavirus '
 
+
 def t_auth(i):
     auth = tweepy.OAuthHandler(consumer_key[i], consumer_secret[i])
     auth.set_access_token(access_token[i], access_token_secret[i])
@@ -42,8 +41,6 @@ def collect(api, until_date, out_name):
                                 until=until_date,
                                 lang='en').items(500)
 
-    #print(list(tweets_list))
-
     output = []
     for tweet in tweets_list:
         time, id, text, favorite_count = tweet._json['created_at'], tweet._json['id'], tweet._json['full_text'], \
@@ -51,7 +48,6 @@ def collect(api, until_date, out_name):
 
         line = {'time': time, 'id': id, 'like': favorite_count, 'text': text.replace("\n", " ")}
         output.append(line)
-        #print(tweet)
 
     df = pd.DataFrame(output)
     df.to_csv(out_name)
