@@ -16,7 +16,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Added TF-IDF, Sentiment Calculations" />
+    <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Graphs added for TF-IDF" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,9 +153,14 @@
     <MESSAGE value="Final Commit 2" />
     <MESSAGE value="Pre Final" />
     <MESSAGE value="Added TF-IDF, Sentiment Calculations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added TF-IDF, Sentiment Calculations" />
+    <MESSAGE value="Graphs added for TF-IDF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Graphs added for TF-IDF" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1001" y="368" key="#Notifications" timestamp="1639343658053">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1001" y="368" key="#Notifications/0.0.2560.1080@0.0.2560.1080" timestamp="1639343658053" />
     <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638637045032">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -164,15 +169,20 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="300" y="88" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1638238201570" />
-    <state x="616" y="287" key="Vcs.Push.Dialog.v2" timestamp="1639274655221">
+    <state x="616" y="287" key="Vcs.Push.Dialog.v2" timestamp="1639274759669">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="616" y="287" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639274655221" />
+    <state x="616" y="287" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639274759669" />
     <state x="880" y="277" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1636924000421" />
-    <state x="697" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639269916007">
+    <state x="678" y="298" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1639274854511">
       <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="678" y="298" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1639274854511" />
+    <state x="996" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639343667448">
+      <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="697" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639269916007" />
+    <state x="996" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1080@0.0.2560.1080" timestamp="1639343667448" />
     <state x="1055" y="433" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1636921006538">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
