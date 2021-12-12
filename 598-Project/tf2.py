@@ -32,7 +32,8 @@ def tfidf(input_file, num_words,output):
         for key, value in dic_u.items():
             n = int(num_words)
             first_n = {k: value[k] for k in list(value)[:n]}
-            dic_u[key] = list(first_n.keys())
+            dic_u[key] = first_n
+            #print(dic_u)
 
         with open(output,"w") as out:
             json.dump(dic_u,out,indent=2)

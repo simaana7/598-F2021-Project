@@ -16,7 +16,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Graphs added for TF-IDF" />
+    <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Graphs added for TF-IDF">
+      <change afterPath="$PROJECT_DIR$/tf_idf_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_idf.json" beforeDir="false" afterPath="$PROJECT_DIR$/tf_idf.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639274629129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Graphs added for TF-IDF">
+      <created>1639343944703</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1639343944704</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,11 +181,11 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="300" y="88" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1638238201570" />
-    <state x="616" y="287" key="Vcs.Push.Dialog.v2" timestamp="1639274759669">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="880" y="277" key="Vcs.Push.Dialog.v2" timestamp="1639343953482">
+      <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="616" y="287" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639274759669" />
-    <state x="880" y="277" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1636924000421" />
+    <state x="880" y="277" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1639343953482" />
     <state x="678" y="298" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1639274854511">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
