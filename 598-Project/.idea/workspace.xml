@@ -17,10 +17,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Graphs added for TF-IDF">
-      <change afterPath="$PROJECT_DIR$/tf_idf_graphs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf2.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tf_idf.json" beforeDir="false" afterPath="$PROJECT_DIR$/tf_idf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tf_idf.py" beforeDir="false" afterPath="$PROJECT_DIR$/tf_idf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/word_count.json" beforeDir="false" afterPath="$PROJECT_DIR$/word_count.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

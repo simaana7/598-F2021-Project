@@ -57,7 +57,9 @@ def word_counts(dialog, output_file):
                  'what', 'when', 'where', 'whether', 'which', 'while', 'who', 'whole', 'whose', 'why', 'will', 'with',
                  'within', 'without', 'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet',
                  'you', 'young', 'younger', 'youngest', 'your', 'yours', 'z', 'https', 'dr', 'sunday', 'iowans', 'st',
-                 'fine', 'move', '']
+                 'fine', 'move', '', "bad", "demand", "wear", "demand", "believe", "panel", "count", "name", "north",
+                 "confirmed", "hit", "million", "bad", "offer", "hope", "team", "half", "please", "hard", "lost", "ass","friday", "thanks", "thank", "november"
+                 ]
 
     with open(dialog, "r") as inp:
         df = pd.read_csv(inp, sep="\t")
