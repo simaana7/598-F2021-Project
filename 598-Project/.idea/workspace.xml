@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="Added TF-IDF, Sentiment Calculations" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20vN5lpJQCK8X5eK89RcdUyj0wA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="423c6f66-5914-404e-bdf2-809b35aab146" name="Default Changelist" comment="" />
+      <created>1636920920878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636920920878</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Tweets Setup">
+      <created>1636921118286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1636921118286</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Setup env">
+      <created>1636923995750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636923995750</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Need to fix error 403">
+      <created>1636988868105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636988868105</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated Keyords">
+      <created>1638236629072</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638236629072</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated Keywords">
+      <created>1638237968461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638237968461</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Final Commit">
+      <created>1638630301325</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638630301326</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Final Commit 2">
+      <created>1638631909566</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638631909566</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Pre Final">
+      <created>1638645251063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638645251063</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added TF-IDF, Sentiment Calculations">
+      <created>1639274629129</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1639274629129</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tweets Setup" />
+    <MESSAGE value="Setup env" />
+    <MESSAGE value="- Need to fix error 403" />
+    <MESSAGE value="Updated Keyords" />
+    <MESSAGE value="Updated Keywords" />
+    <MESSAGE value="Final Commit" />
+    <MESSAGE value="Final Commit 2" />
+    <MESSAGE value="Pre Final" />
+    <MESSAGE value="Added TF-IDF, Sentiment Calculations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added TF-IDF, Sentiment Calculations" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1638637045032">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="219" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1638637045032" />
+    <state x="300" y="88" key="DiffContextDialog" timestamp="1638238201570">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="300" y="88" key="DiffContextDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1638238201570" />
+    <state x="616" y="287" key="Vcs.Push.Dialog.v2" timestamp="1639274655221">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="616" y="287" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639274655221" />
+    <state x="880" y="277" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1636924000421" />
+    <state x="697" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1639269916007">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="697" y="478" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1792.1120@0.0.1792.1120" timestamp="1639269916007" />
+    <state x="1055" y="433" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1636921006538">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="1055" y="433" key="git4idea.remote.GitConfigureRemotesDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1636921006538" />
+  </component>
+</project>

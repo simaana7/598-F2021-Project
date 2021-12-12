@@ -1,0 +1,42 @@
+{
+   "Covid Vaccination": {
+      "+": 56,
+      "/": 124,
+      "-": 81
+   },
+   "Covid Spread": {
+      "+": 10,
+      "/": 88,
+      "-": 64
+   },
+   "Covid Precautions": {
+      "+": 15,
+      "/": 35,
+      "-": 23
+   },
+   "Covid Restrictions": {
+      "+": 12,
+      "/": 35,
+      "-": 24
+   },
+   "Covid Variant Types": {
+      "+": 4,
+      "/": 79,
+      "-": 27
+   },
+   "Post Covid Life": {
+      "+": 11,
+      "/": 29,
+      "-": 24
+   },
+   "Covid and Society": {
+      "+": 21,
+      "/": 80,
+      "-": 82
+   },
+   "Covid and Politics": {
+      "+": 4,
+      "/": 25,
+      "-": 46
+   }
+}

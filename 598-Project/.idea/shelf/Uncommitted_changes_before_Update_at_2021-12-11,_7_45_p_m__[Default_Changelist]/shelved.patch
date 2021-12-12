@@ -1,0 +1,257 @@
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/.gitignore	(date 1639268102132)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/.gitignore	(date 1639268102132)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: tf_idf.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- tf_idf.py	(date 1639269783406)
++++ tf_idf.py	(date 1639269783406)
+@@ -0,0 +1,105 @@
++import pandas as pd
++import argparse
++from collections import Counter
++import json
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument('-o', '--output')
++    parser.add_argument('-d', '--dialog')
++    args = parser.parse_args()
++    dialog = args.dialog
++    output_file = args.output
++    word_counts(dialog, output_file)
++
++
++def word_counts(dialog, output_file):
++    dic = {"Covid Vaccination": {}, "Covid Spread": {}, "Covid Precautions": {}, "Covid Restrictions": {},
++           "Covid Variant Types": {}, "Post Covid Life": {}, "Covid and Society": {}, "Covid and Politics": {}}
++
++    stopwords = ['a', 'am', 'yes', 'about', 'above', 'across', 'after', 'again', 'against', 'all', 'almost', 'alone',
++                 'along', 'ago' , 'already', 'also', 'although', 'always', 'among', 'an', 'and', 'another', 'any', 'anybody', 'anyone',
++                 'anything', 'anywhere', 'are', 'area', 'areas', 'around', 'as', 'ask', 'asked', 'asking', 'asks', 'at',
++                 'away', 'b', 'back', 'backed', 'backing', 'backs', 'be', 'became', 'because', 'become', 'becomes',
++                 'been', 'before', 'began', 'behind', 'being', 'beings', 'best', 'better', 'between', 'big', 'both',
++                 'but', 'by', 'c', 'came', 'can', 'cannot', 'case', 'cases', 'certain', 'certainly', 'clear', 'clearly',
++                 'come', 'could', 'd', 'did', 'differ', 'different', 'differently', 'do', 'does', 'done', 'down',
++                 'down', 'downed', 'downing', 'downs', 'during', 'e', 'each', 'early', 'either', 'end', 'ended',
++                 'ending', 'ends', 'enough', 'even', 'evenly', 'ever', 'every', 'everybody', 'everyone', 'everything',
++                 'everywhere', 'f', 'face', 'faces', 'fact', 'facts', 'far', 'felt', 'few', 'find', 'finds', 'first',
++                 'for', 'four', 'from', 'full', 'fully', 'further', 'furthered', 'furthering', 'furthers', 'g', 'gave',
++                 'general', 'generally', 'get', 'gets', 'give', 'given', 'gives', 'go', 'going', 'good', 'goods', 'got',
++                 'great', 'greater', 'greatest', 'group', 'grouped', 'grouping', 'groups', 'h', 'had', 'has', 'have',
++                 'having', 'he', 'her', 'here', 'herself', 'high', 'high', 'high', 'higher', 'highest', 'him',
++                 'himself', 'his', 'how', 'however', 'i', 'if', 'important', 'in', 'interest', 'interested',
++                 'interesting', 'interests', 'into', 'is', 'it', 'its', 'itself', 'j', 'just', 'k', 'keep', 'keeps',
++                 'kind', 'knew', 'know', 'known', 'knows', 'l', 'large', 'largely', 'last', 'later', 'latest', 'least',
++                 'less', 'let', 'lets', 'like', 'likely', 'long', 'longer', 'longest', 'm', 'made', 'make', 'making',
++                 'man', 'many', 'may', 'me', 'member', 'members', 'men', 'might', 'more', 'most', 'mostly', 'mr', 'mrs',
++                 'much', 'must', 'my', 'myself', 'n', 'necessary', 'need', 'needed', 'needing', 'needs', 'never', 'new',
++                 'new', 'newer', 'newest', 'next', 'no', 'nobody', 'non', 'noone', 'not', 'nothing', 'now', 'nowhere',
++                 'number', 'numbers', 'o', 'of', 'off', 'often', 'old', 'older', 'oldest', 'on', 'once', 'one', 'only',
++                 'open', 'opened', 'opening', 'opens', 'or', 'order', 'ordered', 'ordering', 'orders', 'other',
++                 'others', 'our', 'out', 'over', 'p', 'part', 'parted', 'parting', 'parts', 'per', 'perhaps', 'place',
++                 'places', 'point', 'pointed', 'pointing', 'points', 'possible', 'present', 'presented', 'presenting',
++                 'presents', 'problem', 'problems', 'put', 'puts', 'q', 'quite', 'r', 'rather', 'really', 'right',
++                 'right', 'room', 'rooms', 's', 'said', 'same', 'saw', 'say', 'says', 'second', 'seconds', 'see',
++                 'seem', 'seemed', 'seeming', 'seems', 'sees', 'several', 'shall', 'she', 'should', 'show', 'showed',
++                 'showing', 'shows', 'side', 'sides', 'since', 'small', 'smaller', 'smallest', 'so', 'some', 'somebody',
++                 'someone', 'something', 'somewhere', 'state', 'states', 'still', 'still', 'such', 'sure', 't', 'take',
++                 'taken', 'than', 'that', 'the', 'their', 'them', 'then', 'there', 'therefore', 'these', 'they',
++                 'thing', 'things', 'think', 'thinks', 'this', 'those', 'though', 'thought', 'thoughts', 'three',
++                 'through', 'thus', 'to', 'today', 'together', 'too', 'took', 'toward', 'turn', 'turned', 'turning',
++                 'turns', 'two', 'u', 'under', 'until', 'up', 'upon', 'us', 'use', 'used', 'uses', 'v', 'very', 'w',
++                 'want', 'wanted', 'wanting', 'wants', 'was', 'way', 'ways', 'we', 'well', 'wells', 'went', 'were',
++                 'what', 'when', 'where', 'whether', 'which', 'while', 'who', 'whole', 'whose', 'why', 'will', 'with',
++                 'within', 'without', 'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet',
++                 'you', 'young', 'younger', 'youngest', 'your', 'yours', 'z', 'https', 'dr', 'sunday', 'iowans']
++
++    with open(dialog, "r") as inp:
++        df = pd.read_csv(inp, sep="\t")
++        lis = ['"CV"', '"CS"', '"CP"', '"CR"', '"CT"', '"PL"', '"CY"', '"CL"']
++        to_remove = ''
++        for s in lis:
++            to_remove += (df.query('topic == ' + s)["text"]).str.cat(sep=' ')
++
++        pun = '()[],-.?!:;#&'
++        for ele in to_remove:
++            if ele in pun:
++                to_remove = to_remove.replace(ele, " ")
++        count1 = Counter(to_remove.lower().split(" "))
++
++        dr = []
++        for key, value in count1.items():
++            if value < 5:
++                dr.append(key)
++
++        lis = ['"CV"', '"CS"', '"CP"', '"CR"', '"CT"', '"PL"', '"CY"', '"CL"']
++        list2 = ["Covid Vaccination", "Covid Spread", "Covid Precautions", "Covid Restrictions",
++                 "Covid Variant Types", "Post Covid Life", "Covid and Society", "Covid and Politics"]
++
++        i = 0
++        for s in lis:
++            string = (df.query('topic == ' + s)["text"]).str.cat(sep=' ')
++            pun = '()[],-.?!:;#&'
++            for ele in string:
++                if ele in pun:
++                    string = string.replace(ele, " ")
++
++            count = Counter(string.lower().split(" "))
++            d = {}
++            for key, value in count.items():
++                if (key not in dr) & (key not in stopwords) & (key.isalpha()):
++                    d[key] = value
++            dic[list2[i]] = d
++            i += 1
++
++    with open(output_file, "w") as out:
++        json.dump(dic, out, indent=2)
++
++    return json.dumps(dic, indent=2)
++
++
++if __name__ == '__main__':
++    main()
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/vcs.xml	(date 1639268159370)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/vcs.xml	(date 1639268159370)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/profiles_settings.xml	(date 1639268159363)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/profiles_settings.xml	(date 1639268159363)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/modules.xml	(date 1639268159358)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/modules.xml	(date 1639268159358)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/src.iml" filepath="$PROJECT_DIR$/.idea/src.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/misc.xml	(date 1639268159352)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/misc.xml	(date 1639268159352)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.8" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: tf2.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- tf2.py	(date 1639269402396)
++++ tf2.py	(date 1639269402396)
+@@ -0,0 +1,49 @@
++import argparse
++import json
++import math
++
++
++def main():
++    parser = argparse.ArgumentParser()
++    parser.add_argument('-c', '--input')
++    parser.add_argument('-n', '--num')
++    args = parser.parse_args()
++    input_file = args.input
++    num_words = args.num
++    out = tfidf(input_file,num_words)
++    print(out)
++
++
++def tfidf(input_file, num_words):
++    with open(input_file, "r") as inp:
++        dic = json.loads(inp.read())
++        no_ponies = len(dic.keys())
++        dic_u = {}
++        dic_tfidf = {}
++        for key, value in dic.items():
++            for key1, value1 in value.items():
++                dic_tfidf[key1] = value1 * math.log10(no_ponies / count_no_word(dic, key1))
++            dic_tfidf = dict(sorted(dic_tfidf.items(), key=lambda item: item[1], reverse=True))
++            dic_u[key] = dic_tfidf
++            dic_tfidf = {}
++
++        for key, value in dic_u.items():
++            n = int(num_words)
++            first_n = {k: value[k] for k in list(value)[:n]}
++            dic_u[key] = list(first_n.keys())
++
++        json_dict = json.dumps(dic_u,indent=2)
++        return json_dict
++
++
++def count_no_word(dic, word):
++    count = 0
++    for key, value in dic.items():
++        for key1, value1 in value.items():
++            if key1 == word:
++                count += 1
++    return count
++
++
++if __name__ == '__main__':
++    main()
+Index: ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/Project_Default.xml	(date 1639268159337)
++++ ../Uni:Work/U2/FALL 21/COMP 598/comp598-2021/hw8/submission_template/src/.idea/inspectionProfiles/Project_Default.xml	(date 1639268159337)
+@@ -0,0 +1,7 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="CsvValidation" enabled="true" level="WARNING" enabled_by_default="true" />
++    <inspection_tool class="PyInterpreterInspection" enabled="false" level="WARNING" enabled_by_default="false" />
++  </profile>
++</component>
+\ No newline at end of file
