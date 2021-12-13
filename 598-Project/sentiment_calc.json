@@ -2,7 +2,7 @@
    "Covid Vaccination": {
       "+": 56,
       "/": 124,
-      "-": 81
+      "-": 82
    },
    "Covid Spread": {
       "+": 10,
@@ -24,7 +24,7 @@
       "/": 79,
       "-": 27
    },
-   "Post Covid Life": {
+   "Covid Life Impact": {
       "+": 11,
       "/": 29,
       "-": 24

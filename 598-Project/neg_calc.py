@@ -17,7 +17,7 @@ def main():
         df = pandas.read_csv(inp, sep="\t")
         lis = ['"CV"', '"CS"', '"CP"', '"CR"', '"CT"', '"PL"', '"CY"', '"CL"']
         list2 = ["Covid Vaccination", "Covid Spread", "Covid Precautions", "Covid Restrictions",
-                 "Covid Variant Types", "Post Covid Life", "Covid and Society", "Covid and Politics"]
+                 "Covid Variant Types", "Covid Life Impact", "Covid and Society", "Covid and Politics"]
         i = 0
         for s in lis:
             string = (df.query('topic == ' + s)["sentiment"]).str.cat(sep=' ')
