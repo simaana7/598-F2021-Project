@@ -1,0 +1,418 @@
+{
+  "Covid Vaccination": {
+    "shot": {
+      "neutral": 17,
+      "positive": 10,
+      "negative": 11
+    },
+    "booster": {
+      "neutral": 42,
+      "positive": 29,
+      "negative": 21
+    },
+    "pfizer": {
+      "neutral": 42,
+      "positive": 33,
+      "negative": 25
+    },
+    "vax": {
+      "neutral": 59,
+      "positive": 37,
+      "negative": 46
+    },
+    "dose": {
+      "neutral": 62,
+      "positive": 43,
+      "negative": 55
+    },
+    "jab": {
+      "neutral": 69,
+      "positive": 45,
+      "negative": 63
+    },
+    "approved": {
+      "neutral": 73,
+      "positive": 45,
+      "negative": 63
+    },
+    "risk": {
+      "neutral": 82,
+      "positive": 47,
+      "negative": 69
+    },
+    "moderna": {
+      "neutral": 82,
+      "positive": 47,
+      "negative": 72
+    },
+    "mrna": {
+      "neutral": 82,
+      "positive": 47,
+      "negative": 72
+    }
+  },
+  "Covid Spread": {
+    "analytics": {
+      "neutral": 3,
+      "positive": 0,
+      "negative": 1
+    },
+    "florida": {
+      "neutral": 3,
+      "positive": 0,
+      "negative": 1
+    },
+    "total": {
+      "neutral": 9,
+      "positive": 0,
+      "negative": 2
+    },
+    "county": {
+      "neutral": 9,
+      "positive": 0,
+      "negative": 2
+    },
+    "residents": {
+      "neutral": 10,
+      "positive": 0,
+      "negative": 3
+    },
+    "data": {
+      "neutral": 25,
+      "positive": 0,
+      "negative": 9
+    },
+    "deaths": {
+      "neutral": 33,
+      "positive": 1,
+      "negative": 17
+    },
+    "reporting": {
+      "neutral": 34,
+      "positive": 2,
+      "negative": 18
+    },
+    "publichealth": {
+      "neutral": 37,
+      "positive": 3,
+      "negative": 19
+    },
+    "icu": {
+      "neutral": 44,
+      "positive": 4,
+      "negative": 22
+    }
+  },
+  "Covid Precautions": {
+    "masks": {
+      "neutral": 6,
+      "positive": 5,
+      "negative": 8
+    },
+    "pill": {
+      "neutral": 15,
+      "positive": 5,
+      "negative": 12
+    },
+    "status": {
+      "neutral": 20,
+      "positive": 8,
+      "negative": 13
+    },
+    "mask": {
+      "neutral": 35,
+      "positive": 22,
+      "negative": 25
+    },
+    "event": {
+      "neutral": 43,
+      "positive": 26,
+      "negative": 31
+    },
+    "medicine": {
+      "neutral": 46,
+      "positive": 26,
+      "negative": 34
+    },
+    "mandates": {
+      "neutral": 49,
+      "positive": 26,
+      "negative": 37
+    },
+    "avoid": {
+      "neutral": 52,
+      "positive": 28,
+      "negative": 39
+    },
+    "president": {
+      "neutral": 53,
+      "positive": 28,
+      "negative": 41
+    },
+    "times": {
+      "neutral": 60,
+      "positive": 29,
+      "negative": 48
+    }
+  },
+  "Covid Restrictions": {
+    "isolate": {
+      "neutral": 4,
+      "positive": 1,
+      "negative": 4
+    },
+    "japan": {
+      "neutral": 4,
+      "positive": 1,
+      "negative": 4
+    },
+    "ottawa": {
+      "neutral": 4,
+      "positive": 1,
+      "negative": 4
+    },
+    "rules": {
+      "neutral": 8,
+      "positive": 2,
+      "negative": 7
+    },
+    "pcr": {
+      "neutral": 8,
+      "positive": 2,
+      "negative": 8
+    },
+    "testing": {
+      "neutral": 15,
+      "positive": 6,
+      "negative": 13
+    },
+    "restrictions": {
+      "neutral": 21,
+      "positive": 8,
+      "negative": 16
+    },
+    "quarantine": {
+      "neutral": 25,
+      "positive": 9,
+      "negative": 20
+    },
+    "schools": {
+      "neutral": 28,
+      "positive": 9,
+      "negative": 24
+    },
+    "masks": {
+      "neutral": 34,
+      "positive": 14,
+      "negative": 32
+    }
+  },
+  "Covid Variant Types": {
+    "strain": {
+      "neutral": 8,
+      "positive": 1,
+      "negative": 2
+    },
+    "variant": {
+      "neutral": 78,
+      "positive": 8,
+      "negative": 36
+    },
+    "delta": {
+      "neutral": 78,
+      "positive": 9,
+      "negative": 37
+    },
+    "ottawa": {
+      "neutral": 78,
+      "positive": 9,
+      "negative": 37
+    },
+    "risk": {
+      "neutral": 87,
+      "positive": 11,
+      "negative": 43
+    },
+    "isolated": {
+      "neutral": 88,
+      "positive": 12,
+      "negative": 45
+    },
+    "jabs": {
+      "neutral": 90,
+      "positive": 13,
+      "negative": 48
+    },
+    "china": {
+      "neutral": 90,
+      "positive": 13,
+      "negative": 48
+    },
+    "america": {
+      "neutral": 91,
+      "positive": 13,
+      "negative": 48
+    },
+    "hospitalized": {
+      "neutral": 94,
+      "positive": 13,
+      "negative": 49
+    }
+  },
+  "Post Covid Life": {
+    "party": {
+      "neutral": 1,
+      "positive": 2,
+      "negative": 3
+    },
+    "contagious": {
+      "neutral": 4,
+      "positive": 3,
+      "negative": 5
+    },
+    "house": {
+      "neutral": 5,
+      "positive": 5,
+      "negative": 12
+    },
+    "played": {
+      "neutral": 6,
+      "positive": 8,
+      "negative": 13
+    },
+    "friends": {
+      "neutral": 9,
+      "positive": 10,
+      "negative": 19
+    },
+    "happen": {
+      "neutral": 16,
+      "positive": 10,
+      "negative": 27
+    },
+    "fear": {
+      "neutral": 19,
+      "positive": 12,
+      "negative": 33
+    },
+    "symptoms": {
+      "neutral": 21,
+      "positive": 13,
+      "negative": 36
+    },
+    "started": {
+      "neutral": 25,
+      "positive": 13,
+      "negative": 40
+    },
+    "near": {
+      "neutral": 29,
+      "positive": 14,
+      "negative": 46
+    }
+  },
+  "Covid and Society": {
+    "lebron": {
+      "neutral": 2,
+      "positive": 0,
+      "negative": 1
+    },
+    "supply": {
+      "neutral": 3,
+      "positive": 1,
+      "negative": 2
+    },
+    "americans": {
+      "neutral": 3,
+      "positive": 1,
+      "negative": 2
+    },
+    "died": {
+      "neutral": 12,
+      "positive": 4,
+      "negative": 15
+    },
+    "fauci": {
+      "neutral": 12,
+      "positive": 4,
+      "negative": 15
+    },
+    "economy": {
+      "neutral": 13,
+      "positive": 4,
+      "negative": 20
+    },
+    "dead": {
+      "neutral": 16,
+      "positive": 5,
+      "negative": 24
+    },
+    "times": {
+      "neutral": 23,
+      "positive": 6,
+      "negative": 31
+    },
+    "impact": {
+      "neutral": 27,
+      "positive": 8,
+      "negative": 31
+    },
+    "learn": {
+      "neutral": 30,
+      "positive": 10,
+      "negative": 31
+    }
+  },
+  "Covid and Politics": {
+    "trump": {
+      "neutral": 3,
+      "positive": 0,
+      "negative": 0
+    },
+    "healthcare": {
+      "neutral": 3,
+      "positive": 0,
+      "negative": 4
+    },
+    "workers": {
+      "neutral": 7,
+      "positive": 0,
+      "negative": 8
+    },
+    "judge": {
+      "neutral": 9,
+      "positive": 0,
+      "negative": 11
+    },
+    "democrats": {
+      "neutral": 9,
+      "positive": 0,
+      "negative": 12
+    },
+    "national": {
+      "neutral": 11,
+      "positive": 0,
+      "negative": 16
+    },
+    "republicans": {
+      "neutral": 11,
+      "positive": 0,
+      "negative": 16
+    },
+    "political": {
+      "neutral": 16,
+      "positive": 0,
+      "negative": 18
+    },
+    "administration": {
+      "neutral": 17,
+      "positive": 0,
+      "negative": 20
+    },
+    "biden": {
+      "neutral": 18,
+      "positive": 0,
+      "negative": 20
+    }
+  }
+}

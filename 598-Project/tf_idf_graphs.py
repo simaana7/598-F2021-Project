@@ -22,7 +22,7 @@ def main():
         plt.plot(xAxis, yAxis)
         plt.xlabel('Words')
         plt.ylabel('TF-IDF Values')
-        plt.savefig(str(key)+".png")
+        plt.savefig(str(key)+"_new.png")
 
 
 

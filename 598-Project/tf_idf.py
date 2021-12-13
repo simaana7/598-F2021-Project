@@ -58,7 +58,7 @@ def word_counts(dialog, output_file):
                  'within', 'without', 'work', 'worked', 'working', 'works', 'would', 'x', 'y', 'year', 'years', 'yet',
                  'you', 'young', 'younger', 'youngest', 'your', 'yours', 'z', 'https', 'dr', 'sunday', 'iowans', 'st',
                  'fine', 'move', '', "bad", "demand", "wear", "demand", "believe", "panel", "count", "name", "north",
-                 "confirmed", "hit", "million", "bad", "offer", "hope", "team", "half", "please", "hard", "lost", "ass","friday", "thanks", "thank", "november"
+                 "confirmed", "hit", "million", "bad", "offer", "hope", "team", "half", "please", "hard", "lost", "ass","friday", "thanks", "thank", "november "
                  ]
 
     with open(dialog, "r") as inp:
